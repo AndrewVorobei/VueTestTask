@@ -1,7 +1,32 @@
+<script setup>
+import MainLayout from "@/components/main/MainLayout.vue";
+import LeftSide from "@/components/LeftSide.vue";
+import FooterLayout from "@/components/FooterLayout.vue";
+</script>
+
 <template>
-  <HelloWorld />
+  <div class="page">
+    <div class="inventory">
+      <LeftSide />
+      <MainLayout />
+    </div>
+    <FooterLayout />
+  </div>
 </template>
 
-<script setup>
-import HelloWorld from "../src/components/HelloWorld.vue";
-</script>
+<style>
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 849px;
+  max-height: 660px;
+  gap: 24px;
+}
+
+.inventory {
+  display: flex;
+  gap: 24px;
+}
+</style>
