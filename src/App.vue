@@ -1,7 +1,7 @@
 <script setup>
 import MainLayout from "@/components/main/MainLayout.vue";
-import LeftSide from "@/components/LeftSide.vue";
-import FooterLayout from "@/components/FooterLayout.vue";
+import LeftSide from "@/components/Left/LeftSide.vue";
+import FooterLayout from "@/components/Footer/FooterLayout.vue";
 </script>
 
 <template>
